@@ -67,7 +67,7 @@ export default {
         { src: '/pictures/Alex_P2_1.jpg', alt: 'Alex P2 Podium 1' }
       ],
       p1Pictures: [
-        { src: '/pictures/Zach_P1_1.png', alt: 'Zach P1 Podium 1' },
+        { src: '/pictures/ZachP11.png', alt: 'Zach P1 Podium 1' },
         { src: '/pictures/Zach_P1_2.jpg', alt: 'Zach P1 Podium 2' }
       ]
     }
@@ -82,7 +82,7 @@ export default {
   text-align: center;
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
-  color: var(--kb-black);
+  color: #F5F5DC;
   font-weight: 600;
 }
 .gallery-row {
@@ -99,18 +99,12 @@ export default {
   border-radius: 10px;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  color: var(--kb-black);
-  background: rgba(255, 255, 255, 0.9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
 }
 .thumb img:hover {
   transform: scale(1.05);
 }
 @media (max-width: 768px) {
   .thumb img { width: 90%; height: auto; }
-  .category-section h3 { font-size: 1.4rem; color: var(--kb-black); }
+  .category-section h3 { font-size: 1.4rem; color: #F5F5DC; }
 }
 </style>
