@@ -11,6 +11,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* KB Powersport Colors */
+  --kb-cream: #f5efe7;
+  --kb-black: #333333;
+  --kb-red: #DC143C;
 }
 
 a {

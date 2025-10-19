@@ -15,7 +15,7 @@
           </div>
         </router-link>
       </div>
-    </section>
+    </div>
   </div>
 </template>
 
