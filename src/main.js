@@ -1,6 +1,9 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router' // ✅ same directory, no /index
-import './style.css'
+const { createApp } = Vue; // Vue comes from CDN
 
-createApp(App).use(router).mount('#app')
+createApp({
+  data() {
+    return {
+      message: "Hello KBP Powersport!"
+    };
+  }
+}).mount("#app");
