@@ -48,45 +48,34 @@
 
 <script>
 import Tagline from '../components/KBPTagline.vue'
-import enduranceImg from '../assets/pictures/Endurance.jpg'
-import alexP3_1 from '../assets/pictures/Alex_P3_1.jpg'
-import alexP3_2 from '../assets/pictures/Alex_P3_2.jpg'
-import alexP3_3 from '../assets/pictures/Alex_P3_3.jpg'
-import zachP3_1 from '../assets/pictures/Zach_P3_1.jpg'
-import zachP3_2 from '../assets/pictures/Zach_P3_2.jpg'
-import zachP3_3 from '../assets/pictures/Zach_P3_3.jpg'
-import zachP3_4 from '../assets/pictures/Zach_P3_4.jpg'
-import alexP2_1 from '../assets/pictures/Alex_P2_1.jpg'
-import zachP1_1 from '../assets/pictures/ZachP11.png'
-import zachP1_2 from '../assets/pictures/Zach_P1_2.jpg'
 
 export default {
   name: 'Pictures2025',
   components: { Tagline },
   computed: {
     enduranceImage() {
-      return enduranceImg
+      return '/kbp-website/dist/assets/Endurance-Kw1UCkfq.jpg'
     },
     p3Pictures() {
       return [
-        { src: alexP3_1, alt: 'Alex P3 Podium 1' },
-        { src: alexP3_2, alt: 'Alex P3 Podium 2' },
-        { src: alexP3_3, alt: 'Alex P3 Podium 3' },
-        { src: zachP3_1, alt: 'Zach P3 Podium 1' },
-        { src: zachP3_2, alt: 'Zach P3 Podium 2' },
-        { src: zachP3_3, alt: 'Zach P3 Podium 3' },
-        { src: zachP3_4, alt: 'Zach P3 Podium 4' }
+        { src: '/kbp-website/dist/assets/Alex_P3_1-DZlp3VYR.jpg', alt: 'Alex P3 Podium 1' },
+        { src: '/kbp-website/dist/assets/Alex_P3_2-DD6vfu_T.jpg', alt: 'Alex P3 Podium 2' },
+        { src: '/kbp-website/dist/assets/Alex_P3_3-i_4XOgY7.jpg', alt: 'Alex P3 Podium 3' },
+        { src: '/kbp-website/dist/assets/Zach_P3_1-BQ0Cdkpi.jpg', alt: 'Zach P3 Podium 1' },
+        { src: '/kbp-website/dist/assets/Zach_P3_2-CDZA_j6R.jpg', alt: 'Zach P3 Podium 2' },
+        { src: '/kbp-website/dist/assets/Zach_P3_3-D81zsyFE.jpg', alt: 'Zach P3 Podium 3' },
+        { src: '/kbp-website/dist/assets/Zach_P3_4-Cc18nWls.jpg', alt: 'Zach P3 Podium 4' }
       ]
     },
     p2Pictures() {
       return [
-        { src: alexP2_1, alt: 'Alex P2 Podium 1' }
+        { src: '/kbp-website/dist/assets/Alex_P2_1-D6gzMeaa.jpg', alt: 'Alex P2 Podium 1' }
       ]
     },
     p1Pictures() {
       return [
-        { src: zachP1_1, alt: 'Zach P1 Podium 1' },
-        { src: zachP1_2, alt: 'Zach P1 Podium 2' }
+        { src: '/kbp-website/dist/assets/ZachP11-C5VW6Lq3.png', alt: 'Zach P1 Podium 1' },
+        { src: '/kbp-website/dist/assets/Zach_P1_2-DKnurcyt.jpg', alt: 'Zach P1 Podium 2' }
       ]
     }
   }
