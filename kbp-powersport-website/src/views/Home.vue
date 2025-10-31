@@ -50,6 +50,17 @@
 
 <script>
 import Tagline from '../components/KBPTagline.vue'
+import alexK3_1 from '../assets/pictures/alex_k3_1.jpg'
+import alexK3_2 from '../assets/pictures/alex_k3_2.jpg'
+import alexK3_3 from '../assets/pictures/alex_k3_3.jpg'
+import alexK3_4 from '../assets/pictures/alex_k3_4.jpg'
+import alexK3_5 from '../assets/pictures/alex_k3_5.jpg'
+import zachK3_1 from '../assets/pictures/zach_k3_1.jpg'
+import zachK3_2 from '../assets/pictures/zach_k3_2.jpg'
+import zachK3_3 from '../assets/pictures/zach_k3_3.jpg'
+import zachK3_4 from '../assets/pictures/zach_k3_4.jpg'
+import zachK3_5 from '../assets/pictures/zach_k3_5.jpg'
+import zachK3_6 from '../assets/pictures/zach_k3_6.jpg'
 
 export default {
   name: 'Home',
@@ -63,19 +74,19 @@ export default {
   },
   computed: {
     images() {
-      // Use relative paths - Vite will handle this correctly for both dev and production
+      // Use imported assets - Vite will handle the URLs correctly
       return [
-        { src: 'pictures/alex_k3_1.jpg', alt: 'Alex K3 Action Shot 1' },
-        { src: 'pictures/alex_k3_2.jpg', alt: 'Alex K3 Action Shot 2' },
-        { src: 'pictures/alex_k3_3.jpg', alt: 'Alex K3 Action Shot 3' },
-        { src: 'pictures/alex_k3_4.jpg', alt: 'Alex K3 Action Shot 4' },
-        { src: 'pictures/alex_k3_5.jpg', alt: 'Alex K3 Action Shot 5' },
-        { src: 'pictures/zach_k3_1.jpg', alt: 'Zach K3 Action Shot 1' },
-        { src: 'pictures/zach_k3_2.jpg', alt: 'Zach K3 Action Shot 2' },
-        { src: 'pictures/zach_k3_3.jpg', alt: 'Zach K3 Action Shot 3' },
-        { src: 'pictures/zach_k3_4.jpg', alt: 'Zach K3 Action Shot 4' },
-        { src: 'pictures/zach_k3_5.jpg', alt: 'Zach K3 Action Shot 5' },
-        { src: 'pictures/zach_k3_6.jpg', alt: 'Zach K3 Action Shot 6' }
+        { src: alexK3_1, alt: 'Alex K3 Action Shot 1' },
+        { src: alexK3_2, alt: 'Alex K3 Action Shot 2' },
+        { src: alexK3_3, alt: 'Alex K3 Action Shot 3' },
+        { src: alexK3_4, alt: 'Alex K3 Action Shot 4' },
+        { src: alexK3_5, alt: 'Alex K3 Action Shot 5' },
+        { src: zachK3_1, alt: 'Zach K3 Action Shot 1' },
+        { src: zachK3_2, alt: 'Zach K3 Action Shot 2' },
+        { src: zachK3_3, alt: 'Zach K3 Action Shot 3' },
+        { src: zachK3_4, alt: 'Zach K3 Action Shot 4' },
+        { src: zachK3_5, alt: 'Zach K3 Action Shot 5' },
+        { src: zachK3_6, alt: 'Zach K3 Action Shot 6' }
       ]
     },
     currentImage() {

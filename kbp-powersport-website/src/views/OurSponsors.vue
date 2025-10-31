@@ -84,16 +84,18 @@
 
 <script>
 import Tagline from '../components/KBPTagline.vue'
+import liveWireImg from '../assets/pictures/sponsors/LiveWire.png'
+import squigisImg from '../assets/pictures/sponsors/squigis.png'
 
 export default {
   name: 'Sponsors',
   components: { Tagline },
   computed: {
     liveWireLogo() {
-      return 'pictures/sponsors/LiveWire.png'
+      return liveWireImg
     },
     squigisLogo() {
-      return 'pictures/sponsors/squigis.png'
+      return squigisImg
     }
   }
 }
