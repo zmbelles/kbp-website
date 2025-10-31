@@ -50,18 +50,18 @@
 
 <script>
 import Tagline from '../components/KBPTagline.vue'
-// Import images as modules
-import alexK3_1 from '../assets/pictures/alex_k3_1.svg'
-import alexK3_2 from '../assets/pictures/alex_k3_2.jpg'
-import alexK3_3 from '../assets/pictures/alex_k3_3.jpg'
-import alexK3_4 from '../assets/pictures/alex_k3_4.jpg'
-import alexK3_5 from '../assets/pictures/alex_k3_5.jpg'
-import zachK3_1 from '../assets/pictures/zach_k3_1.jpg'
-import zachK3_2 from '../assets/pictures/zach_k3_2.jpg'
-import zachK3_3 from '../assets/pictures/zach_k3_3.jpg'
-import zachK3_4 from '../assets/pictures/zach_k3_4.jpg'
-import zachK3_5 from '../assets/pictures/zach_k3_5.jpg'
-import zachK3_6 from '../assets/pictures/zach_k3_6.jpg'
+// Import images as URL assets to ensure proper base path handling
+import alexK3_1 from '../assets/pictures/alex_k3_1.svg?url'
+import alexK3_2 from '../assets/pictures/alex_k3_2.jpg?url'
+import alexK3_3 from '../assets/pictures/alex_k3_3.jpg?url'
+import alexK3_4 from '../assets/pictures/alex_k3_4.jpg?url'
+import alexK3_5 from '../assets/pictures/alex_k3_5.jpg?url'
+import zachK3_1 from '../assets/pictures/zach_k3_1.jpg?url'
+import zachK3_2 from '../assets/pictures/zach_k3_2.jpg?url'
+import zachK3_3 from '../assets/pictures/zach_k3_3.jpg?url'
+import zachK3_4 from '../assets/pictures/zach_k3_4.jpg?url'
+import zachK3_5 from '../assets/pictures/zach_k3_5.jpg?url'
+import zachK3_6 from '../assets/pictures/zach_k3_6.jpg?url'
 
 export default {
   name: 'Home',

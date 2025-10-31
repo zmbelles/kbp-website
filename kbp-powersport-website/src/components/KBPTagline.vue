@@ -1,13 +1,20 @@
 <template>
   <div class="tagline-block" role="banner" aria-label="KB Powersport tagline">
-    <img src="../assets/logo.png" alt="KB Powersport Logo" class="tagline-logo" />
+    <img :src="logoUrl" alt="KB Powersport Logo" class="tagline-logo" />
     <p class="tagline-text">Driven by passion. Defined by precision.</p>
   </div>
 </template>
 
 <script>
+import logoUrl from '../assets/logo.png?url'
+
 export default {
-  name: 'Tagline'
+  name: 'Tagline',
+  data() {
+    return {
+      logoUrl
+    }
+  }
 }
 </script>
 

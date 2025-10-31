@@ -48,18 +48,18 @@
 
 <script>
 import Tagline from '../components/KBPTagline.vue'
-// Import images as modules
-import enduranceImage from '../assets/pictures/Endurance.jpg'
-import alexP3_1 from '../assets/pictures/Alex_P3_1.jpg'
-import alexP3_2 from '../assets/pictures/Alex_P3_2.jpg'
-import alexP3_3 from '../assets/pictures/Alex_P3_3.jpg'
-import zachP3_1 from '../assets/pictures/Zach_P3_1.jpg'
-import zachP3_2 from '../assets/pictures/Zach_P3_2.jpg'
-import zachP3_3 from '../assets/pictures/Zach_P3_3.jpg'
-import zachP3_4 from '../assets/pictures/Zach_P3_4.jpg'
-import alexP2_1 from '../assets/pictures/Alex_P2_1.jpg'
-import zachP1_1 from '../assets/pictures/ZachP11.png'
-import zachP1_2 from '../assets/pictures/Zach_P1_2.jpg'
+// Import images as URL assets to ensure proper base path handling
+import enduranceImage from '../assets/pictures/Endurance.jpg?url'
+import alexP3_1 from '../assets/pictures/Alex_P3_1.jpg?url'
+import alexP3_2 from '../assets/pictures/Alex_P3_2.jpg?url'
+import alexP3_3 from '../assets/pictures/Alex_P3_3.jpg?url'
+import zachP3_1 from '../assets/pictures/Zach_P3_1.jpg?url'
+import zachP3_2 from '../assets/pictures/Zach_P3_2.jpg?url'
+import zachP3_3 from '../assets/pictures/Zach_P3_3.jpg?url'
+import zachP3_4 from '../assets/pictures/Zach_P3_4.jpg?url'
+import alexP2_1 from '../assets/pictures/Alex_P2_1.jpg?url'
+import zachP1_1 from '../assets/pictures/ZachP11.png?url'
+import zachP1_2 from '../assets/pictures/Zach_P1_2.jpg?url'
 
 export default {
   name: 'Pictures2025',
