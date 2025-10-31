@@ -58,20 +58,28 @@ export default {
     return {
       lightboxOpen: false,
       currentImageIndex: 0,
-      images: [
-        { src: '/pictures/alex_k3_1.jpg', alt: 'Alex K3 Action Shot 1' },
-        { src: '/pictures/alex_k3_2.jpg', alt: 'Alex K3 Action Shot 2' },
-        { src: '/pictures/alex_k3_3.jpg', alt: 'Alex K3 Action Shot 3' },
-        { src: '/pictures/alex_k3_4.jpg', alt: 'Alex K3 Action Shot 4' },
-        { src: '/pictures/alex_k3_5.jpg', alt: 'Alex K3 Action Shot 5' },
-        { src: '/pictures/zach_k3_1.jpg', alt: 'Zach K3 Action Shot 1' },
-        { src: '/pictures/zach_k3_2.jpg', alt: 'Zach K3 Action Shot 2' },
-        { src: '/pictures/zach_k3_3.jpg', alt: 'Zach K3 Action Shot 3' },
-        { src: '/pictures/zach_k3_4.jpg', alt: 'Zach K3 Action Shot 4' },
-        { src: '/pictures/zach_k3_5.jpg', alt: 'Zach K3 Action Shot 5' },
-        { src: '/pictures/zach_k3_6.jpg', alt: 'Zach K3 Action Shot 6' }
-      ],
       imageStates: []
+    }
+  },
+  computed: {
+    images() {
+      const baseUrl = import.meta.env.BASE_URL
+      return [
+        { src: baseUrl + 'pictures/alex_k3_1.jpg', alt: 'Alex K3 Action Shot 1' },
+        { src: baseUrl + 'pictures/alex_k3_2.jpg', alt: 'Alex K3 Action Shot 2' },
+        { src: baseUrl + 'pictures/alex_k3_3.jpg', alt: 'Alex K3 Action Shot 3' },
+        { src: baseUrl + 'pictures/alex_k3_4.jpg', alt: 'Alex K3 Action Shot 4' },
+        { src: baseUrl + 'pictures/alex_k3_5.jpg', alt: 'Alex K3 Action Shot 5' },
+        { src: baseUrl + 'pictures/zach_k3_1.jpg', alt: 'Zach K3 Action Shot 1' },
+        { src: baseUrl + 'pictures/zach_k3_2.jpg', alt: 'Zach K3 Action Shot 2' },
+        { src: baseUrl + 'pictures/zach_k3_3.jpg', alt: 'Zach K3 Action Shot 3' },
+        { src: baseUrl + 'pictures/zach_k3_4.jpg', alt: 'Zach K3 Action Shot 4' },
+        { src: baseUrl + 'pictures/zach_k3_5.jpg', alt: 'Zach K3 Action Shot 5' },
+        { src: baseUrl + 'pictures/zach_k3_6.jpg', alt: 'Zach K3 Action Shot 6' }
+      ]
+    },
+    currentImage() {
+      return this.images[this.currentImageIndex]
     }
   },
   created() {
@@ -80,11 +88,6 @@ export default {
       loaded: false,
       error: false
     }))
-  },
-  computed: {
-    currentImage() {
-      return this.images[this.currentImageIndex]
-    }
   },
   methods: {
     openLightbox(index) {

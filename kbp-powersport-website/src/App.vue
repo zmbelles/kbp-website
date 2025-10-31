@@ -7,7 +7,6 @@
         <router-link to="/story" class="nav-link">Story</router-link>
         <router-link to="/blog" class="nav-link">Blog</router-link>
         <router-link to="/pictures" class="nav-link">Pictures</router-link>
-        <router-link to="/sponsors" class="nav-link">Sponsors</router-link>
       </nav>
     </header>
 
@@ -54,7 +53,7 @@ export default {
 .navbar {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 5rem;
   flex-wrap: wrap;
   margin-top: 0.6rem;
 }

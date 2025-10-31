@@ -29,10 +29,15 @@ export default {
 </script>
 
 <style scoped>
+.pictures-page {
+  min-height: 100vh;
+  background: var(--kb-cream);
+}
+
 .folder-gallery {
   padding: 2rem;
   max-width: 1200px;
-  color: #F5F5DC;
+  color: var(--kb-black);
   margin: 0 auto;
 }
 
@@ -40,7 +45,7 @@ export default {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2.2rem;
-  color: #F5F5DC;
+  color: var(--kb-black);
   font-weight: 600;
 }
 

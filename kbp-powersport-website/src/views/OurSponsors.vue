@@ -22,7 +22,7 @@
             <div class="sponsor-card">
               <div class="sponsor-top">
                 <div class="sponsor-logo">
-                  <img src="/pictures/sponsors/LiveWire.png" alt="LiveWire Construction Logo" />
+                  <img :src="liveWireLogo" alt="LiveWire Construction Logo" />
                 </div>
                 <div class="sponsor-header">
                   <h4>LiveWire Construction</h4>
@@ -47,7 +47,7 @@
             <div class="sponsor-card">
               <div class="sponsor-top">
                 <div class="sponsor-logo">
-                  <img src="/pictures/sponsors/squigis.png" alt="Squigi's Window Cleaning Logo" />
+                  <img :src="squigisLogo" alt="Squigi's Window Cleaning Logo" />
                 </div>
                 <div class="sponsor-header">
                   <h4>Squigi's Window Cleaning</h4>
@@ -87,7 +87,15 @@ import Tagline from '../components/KBPTagline.vue'
 
 export default {
   name: 'Sponsors',
-  components: { Tagline }
+  components: { Tagline },
+  computed: {
+    liveWireLogo() {
+      return import.meta.env.BASE_URL + 'pictures/sponsors/LiveWire.png'
+    },
+    squigisLogo() {
+      return import.meta.env.BASE_URL + 'pictures/sponsors/squigis.png'
+    }
+  }
 }
 </script>
 

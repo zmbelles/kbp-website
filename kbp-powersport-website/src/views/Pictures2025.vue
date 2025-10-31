@@ -38,7 +38,7 @@
         <h3>Endurance Victory</h3>
         <div class="gallery-row">
           <figure class="thumb">
-            <img src="/pictures/Endurance.jpg" alt="Endurance Victory" />
+            <img :src="enduranceImage" alt="Endurance Victory" />
           </figure>
         </div>
       </div>
@@ -52,23 +52,33 @@ import Tagline from '../components/KBPTagline.vue'
 export default {
   name: 'Pictures2025',
   components: { Tagline },
-  data() {
-    return {
-      p3Pictures: [
-        { src: '/pictures/Alex_P3_1.jpg', alt: 'Alex P3 Podium 1' },
-        { src: '/pictures/Alex_P3_2.jpg', alt: 'Alex P3 Podium 2' },
-        { src: '/pictures/Alex_P3_3.jpg', alt: 'Alex P3 Podium 3' },
-        { src: '/pictures/Zach_P3_1.jpg', alt: 'Zach P3 Podium 1' },
-        { src: '/pictures/Zach_P3_2.jpg', alt: 'Zach P3 Podium 2' },
-        { src: '/pictures/Zach_P3_3.jpg', alt: 'Zach P3 Podium 3' },
-        { src: '/pictures/Zach_P3_4.jpg', alt: 'Zach P3 Podium 4' }
-      ],
-      p2Pictures: [
-        { src: '/pictures/Alex_P2_1.jpg', alt: 'Alex P2 Podium 1' }
-      ],
-      p1Pictures: [
-        { src: '/pictures/ZachP11.png', alt: 'Zach P1 Podium 1' },
-        { src: '/pictures/Zach_P1_2.jpg', alt: 'Zach P1 Podium 2' }
+  computed: {
+    enduranceImage() {
+      return import.meta.env.BASE_URL + 'pictures/Endurance.jpg'
+    },
+    p3Pictures() {
+      const baseUrl = import.meta.env.BASE_URL
+      return [
+        { src: baseUrl + 'pictures/Alex_P3_1.jpg', alt: 'Alex P3 Podium 1' },
+        { src: baseUrl + 'pictures/Alex_P3_2.jpg', alt: 'Alex P3 Podium 2' },
+        { src: baseUrl + 'pictures/Alex_P3_3.jpg', alt: 'Alex P3 Podium 3' },
+        { src: baseUrl + 'pictures/Zach_P3_1.jpg', alt: 'Zach P3 Podium 1' },
+        { src: baseUrl + 'pictures/Zach_P3_2.jpg', alt: 'Zach P3 Podium 2' },
+        { src: baseUrl + 'pictures/Zach_P3_3.jpg', alt: 'Zach P3 Podium 3' },
+        { src: baseUrl + 'pictures/Zach_P3_4.jpg', alt: 'Zach P3 Podium 4' }
+      ]
+    },
+    p2Pictures() {
+      const baseUrl = import.meta.env.BASE_URL
+      return [
+        { src: baseUrl + 'pictures/Alex_P2_1.jpg', alt: 'Alex P2 Podium 1' }
+      ]
+    },
+    p1Pictures() {
+      const baseUrl = import.meta.env.BASE_URL
+      return [
+        { src: baseUrl + 'pictures/ZachP11.png', alt: 'Zach P1 Podium 1' },
+        { src: baseUrl + 'pictures/Zach_P1_2.jpg', alt: 'Zach P1 Podium 2' }
       ]
     }
   }
@@ -76,13 +86,18 @@ export default {
 </script>
 
 <style scoped>
+.pictures-page {
+  min-height: 100vh;
+  background: var(--kb-cream);
+}
+
 .gallery { padding: 2rem 0; }
 .category-section { margin-bottom: 3rem; }
 .category-section h3 {
   text-align: center;
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
-  color: #F5F5DC;
+  color: var(--kb-black);
   font-weight: 600;
 }
 .gallery-row {
@@ -105,6 +120,6 @@ export default {
 }
 @media (max-width: 768px) {
   .thumb img { width: 90%; height: auto; }
-  .category-section h3 { font-size: 1.4rem; color: #F5F5DC; }
+  .category-section h3 { font-size: 1.4rem; color: var(--kb-black); }
 }
 </style>
