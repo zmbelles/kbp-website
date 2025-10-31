@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Read(//mnt/c/Users/ZMB/OneDrive/**)",
-      "Bash(cd:*)"
+      "Bash(cd:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []

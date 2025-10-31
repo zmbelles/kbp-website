@@ -90,12 +90,10 @@ export default {
   components: { Tagline },
   computed: {
     liveWireLogo() {
-      const baseUrl = import.meta.env.DEV ? '/' : '/kbp-website/'
-      return baseUrl + 'pictures/sponsors/LiveWire.png'
+      return 'pictures/sponsors/LiveWire.png'
     },
     squigisLogo() {
-      const baseUrl = import.meta.env.DEV ? '/' : '/kbp-website/'
-      return baseUrl + 'pictures/sponsors/squigis.png'
+      return 'pictures/sponsors/squigis.png'
     }
   }
 }

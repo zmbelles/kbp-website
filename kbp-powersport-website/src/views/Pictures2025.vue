@@ -54,32 +54,28 @@ export default {
   components: { Tagline },
   computed: {
     enduranceImage() {
-      const baseUrl = import.meta.env.DEV ? '/' : '/kbp-website/'
-      return baseUrl + 'pictures/Endurance.jpg'
+      return 'pictures/Endurance.jpg'
     },
     p3Pictures() {
-      const baseUrl = import.meta.env.DEV ? '/' : '/kbp-website/'
       return [
-        { src: baseUrl + 'pictures/Alex_P3_1.jpg', alt: 'Alex P3 Podium 1' },
-        { src: baseUrl + 'pictures/Alex_P3_2.jpg', alt: 'Alex P3 Podium 2' },
-        { src: baseUrl + 'pictures/Alex_P3_3.jpg', alt: 'Alex P3 Podium 3' },
-        { src: baseUrl + 'pictures/Zach_P3_1.jpg', alt: 'Zach P3 Podium 1' },
-        { src: baseUrl + 'pictures/Zach_P3_2.jpg', alt: 'Zach P3 Podium 2' },
-        { src: baseUrl + 'pictures/Zach_P3_3.jpg', alt: 'Zach P3 Podium 3' },
-        { src: baseUrl + 'pictures/Zach_P3_4.jpg', alt: 'Zach P3 Podium 4' }
+        { src: 'pictures/Alex_P3_1.jpg', alt: 'Alex P3 Podium 1' },
+        { src: 'pictures/Alex_P3_2.jpg', alt: 'Alex P3 Podium 2' },
+        { src: 'pictures/Alex_P3_3.jpg', alt: 'Alex P3 Podium 3' },
+        { src: 'pictures/Zach_P3_1.jpg', alt: 'Zach P3 Podium 1' },
+        { src: 'pictures/Zach_P3_2.jpg', alt: 'Zach P3 Podium 2' },
+        { src: 'pictures/Zach_P3_3.jpg', alt: 'Zach P3 Podium 3' },
+        { src: 'pictures/Zach_P3_4.jpg', alt: 'Zach P3 Podium 4' }
       ]
     },
     p2Pictures() {
-      const baseUrl = import.meta.env.DEV ? '/' : '/kbp-website/'
       return [
-        { src: baseUrl + 'pictures/Alex_P2_1.jpg', alt: 'Alex P2 Podium 1' }
+        { src: 'pictures/Alex_P2_1.jpg', alt: 'Alex P2 Podium 1' }
       ]
     },
     p1Pictures() {
-      const baseUrl = import.meta.env.DEV ? '/' : '/kbp-website/'
       return [
-        { src: baseUrl + 'pictures/ZachP11.png', alt: 'Zach P1 Podium 1' },
-        { src: baseUrl + 'pictures/Zach_P1_2.jpg', alt: 'Zach P1 Podium 2' }
+        { src: 'pictures/ZachP11.png', alt: 'Zach P1 Podium 1' },
+        { src: 'pictures/Zach_P1_2.jpg', alt: 'Zach P1 Podium 2' }
       ]
     }
   }
