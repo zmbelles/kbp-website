@@ -54,10 +54,11 @@ export default {
   components: { Tagline },
   computed: {
     enduranceImage() {
-      return import.meta.env.BASE_URL + 'pictures/Endurance.jpg'
+      const baseUrl = import.meta.env.DEV ? '/' : '/kbp-website/'
+      return baseUrl + 'pictures/Endurance.jpg'
     },
     p3Pictures() {
-      const baseUrl = import.meta.env.BASE_URL
+      const baseUrl = import.meta.env.DEV ? '/' : '/kbp-website/'
       return [
         { src: baseUrl + 'pictures/Alex_P3_1.jpg', alt: 'Alex P3 Podium 1' },
         { src: baseUrl + 'pictures/Alex_P3_2.jpg', alt: 'Alex P3 Podium 2' },
@@ -69,13 +70,13 @@ export default {
       ]
     },
     p2Pictures() {
-      const baseUrl = import.meta.env.BASE_URL
+      const baseUrl = import.meta.env.DEV ? '/' : '/kbp-website/'
       return [
         { src: baseUrl + 'pictures/Alex_P2_1.jpg', alt: 'Alex P2 Podium 1' }
       ]
     },
     p1Pictures() {
-      const baseUrl = import.meta.env.BASE_URL
+      const baseUrl = import.meta.env.DEV ? '/' : '/kbp-website/'
       return [
         { src: baseUrl + 'pictures/ZachP11.png', alt: 'Zach P1 Podium 1' },
         { src: baseUrl + 'pictures/Zach_P1_2.jpg', alt: 'Zach P1 Podium 2' }

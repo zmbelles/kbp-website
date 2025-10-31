@@ -63,7 +63,8 @@ export default {
   },
   computed: {
     images() {
-      const baseUrl = import.meta.env.BASE_URL
+      // For development, use relative paths; for production, use base URL
+      const baseUrl = import.meta.env.DEV ? '/' : '/kbp-website/'
       return [
         { src: baseUrl + 'pictures/alex_k3_1.jpg', alt: 'Alex K3 Action Shot 1' },
         { src: baseUrl + 'pictures/alex_k3_2.jpg', alt: 'Alex K3 Action Shot 2' },
