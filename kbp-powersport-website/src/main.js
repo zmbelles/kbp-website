@@ -1,9 +1,7 @@
-const { createApp } = Vue; // Vue comes from CDN
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
 
-createApp({
-  data() {
-    return {
-      message: "Hello KBP Powersport!"
-    };
-  }
-}).mount("#app");
+const app = createApp(App);
+app.use(router);
+app.mount('#app');
