@@ -50,7 +50,7 @@
 
 <script>
 import Tagline from '../components/KBPTagline.vue'
-import alexK3_1 from '../assets/pictures/alex_k3_1.jpg'
+import alexK3_1 from '../assets/pictures/alex_k3_1.svg'
 import alexK3_2 from '../assets/pictures/alex_k3_2.jpg'
 import alexK3_3 from '../assets/pictures/alex_k3_3.jpg'
 import alexK3_4 from '../assets/pictures/alex_k3_4.jpg'
